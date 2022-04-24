@@ -8,9 +8,11 @@
 /* *STUDIO* */
 /* header */
 body {
-  font-family: Roboto;
-  font-weight: 400;
+  background-color: var(--footer-text);
+  color: var(--basic-link-color);
+  font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 .header {
   color: var(--footer-text);
@@ -38,12 +40,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.nav-list a {
+.nav-link {
   text-decoration: none;
   color: var(--color-title);
 }
-.nav-list a:hover,
-.nav-list a:focus {
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--secondary-link-color);
+}
+.current-page {
   color: var(--secondary-link-color);
 }
 .header-info {
@@ -53,11 +58,11 @@ body {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.header-info a:hover,
-.header-info a:focus {
+.header-link:hover,
+.header-link:focus {
   color: var(--secondary-link-color);
 }
-.header-info a {
+.header-link {
   text-decoration: none;
   color: var(--basic-link-color);
 }
@@ -77,12 +82,15 @@ body {
 .button {
   background-color: var(--secondary-link-color);
   color: var(--footer-text);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   align-items: center;
   text-align: center;
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 /* section-two */
 .characteristic-name {
@@ -119,17 +127,18 @@ body {
   line-height: 1.12;
   text-align: center;
 }
+/* section four */
+.team-section {
+  background-color: #f5f4fa;
+}
 /* footer */
 .footer {
   background-color: #2f303a;
 }
-.footer-studio h2 {
-  color: var(--footer-text);
-}
 .footer-address {
   font-style: normal;
 }
-.footer-text {
+.footer-item {
   color: var(--footer-text);
   font-weight: 400;
   font-size: 14px;
@@ -137,22 +146,21 @@ body {
 }
 .footer-info {
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   text-decoration: none;
 }
 .footer-info:hover,
 .footer-info:focus {
   color: var(--secondary-link-color);
 }
-h2 .footer-studio {
-  color: var(--footer-text);
-}
-.footer-logo > h2 {
+.footer-logo {
   font-weight: 700;
   font-size: 26px;
+  color: var(--secondary-link-color);
 }
+.footer-studio {
+  color: var(--footer-text);
+}
+
 /* *PORTFOLIO* */
 .button-icon {
   background-color: var(--button-first-color);
@@ -163,13 +171,20 @@ h2 .footer-studio {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 .button-icon:hover,
 .button-icon:focus {
   background-color: var(--secondary-link-color);
   color: var(--footer-text);
 }
-.project-list a {
+.button-head {
+  background-color: var(--secondary-link-color);
+  color: var(--footer-text);
+}
+.project-link {
   text-decoration: none;
 }
 .project-name {
